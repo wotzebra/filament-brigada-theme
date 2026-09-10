@@ -243,6 +243,8 @@
 /* Filament sizes this at 2.25rem, which alone made the heading row 48px tall. */
 .fi-sidebar-group-btn .fi-icon-btn,
 .fi-sidebar-group-collapse-btn {
+    /* Sized here rather than by Filament, so its offset has nothing to undo. */
+    margin: 0;
     margin-left: auto;
     width: 1.25rem;
     height: 1.25rem;
@@ -465,6 +467,7 @@
 
 .fi-sidebar-footer .fi-icon-btn,
 .fi-topbar-database-notifications-btn {
+    margin: 0;
     justify-content: flex-start;
     gap: 0.625rem;
     width: 100%;
@@ -861,8 +864,14 @@
     stroke-width: 1.5;
 }
 
+/*
+ * No `margin` reset here. Filament gives every icon button a negative margin
+ * so its 2rem hit area collapses to the size of the glyph inside it, and the
+ * button can sit on a line of 14px text without making the row 32px tall.
+ * Zeroing it pushed every hint, every inline action and every icon beside a
+ * label six pixels below the label it belongs to.
+ */
 .fi-icon-btn {
-    margin: 0;
     border-radius: var(--r-md);
     color: var(--muted);
     transition:
