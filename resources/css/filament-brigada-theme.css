@@ -14,21 +14,21 @@
  */
 
 :root {
-    /* Warm white the ground is mixed into, so every palette keeps a paper character. */
-    --paper: #fdfbf7;
+  /* Warm white the ground is mixed into, so every palette keeps a paper character. */
+  --paper: #fdfbf7;
 
-    /* Status hues, fixed across palettes so they keep their meaning. */
-    --hue-info: #4d7bff;
-    --hue-success: #2fc699;
-    --hue-warning: #f2a33c;
-    --hue-danger: #d2453d;
+  /* Status hues, fixed across palettes so they keep their meaning. */
+  --hue-info: #4d7bff;
+  --hue-success: #2fc699;
+  --hue-warning: #f2a33c;
+  --hue-danger: #d2453d;
 
-    --r-sm: 0.5rem;
-    --r-md: 0.75rem;
-    --r-lg: 1rem;
-    --r-pill: 999px;
+  --r-sm: 0.5rem;
+  --r-md: 0.75rem;
+  --r-lg: 1rem;
+  --r-pill: 999px;
 
-    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ---- Palettes ---------------------------------------------------------
@@ -38,45 +38,45 @@
    --s-accent-2 secondary accent
    Values are the brio ramp stops, ink-darkened for contrast on white. */
 .brio-01 {
-    --s-dark: color-mix(in oklab, #511259 82%, #181614);
-    --s-text: color-mix(in oklab, #511259 22%, #181614);
-    --s-accent: #a93bbe;
-    --s-accent-2: #ad002a;
+  --s-dark: color-mix(in oklab, #511259 82%, #181614);
+  --s-text: color-mix(in oklab, #511259 22%, #181614);
+  --s-accent: #a93bbe;
+  --s-accent-2: #ad002a;
 }
 
 .brio-02 {
-    --s-dark: color-mix(in oklab, #ad002a 72%, #181614);
-    --s-text: color-mix(in oklab, #ad002a 18%, #181614);
-    --s-accent: #c73e9e;
-    --s-accent-2: #ff70a9;
+  --s-dark: color-mix(in oklab, #ad002a 72%, #181614);
+  --s-text: color-mix(in oklab, #ad002a 18%, #181614);
+  --s-accent: #c73e9e;
+  --s-accent-2: #ff70a9;
 }
 
 .brio-03 {
-    --s-dark: color-mix(in oklab, #8a6a00 62%, #181614);
-    --s-text: color-mix(in oklab, #8a6a00 16%, #181614);
-    --s-accent: #c78a1e;
-    --s-accent-2: #ff70a9;
+  --s-dark: color-mix(in oklab, #8a6a00 62%, #181614);
+  --s-text: color-mix(in oklab, #8a6a00 16%, #181614);
+  --s-accent: #c78a1e;
+  --s-accent-2: #ff70a9;
 }
 
 .brio-04 {
-    --s-dark: color-mix(in oklab, #2fc699 58%, #181614);
-    --s-text: color-mix(in oklab, #2fc699 15%, #181614);
-    --s-accent: color-mix(in oklab, #2fc699 62%, #181614);
-    --s-accent-2: #96d56a;
+  --s-dark: color-mix(in oklab, #2fc699 58%, #181614);
+  --s-text: color-mix(in oklab, #2fc699 15%, #181614);
+  --s-accent: color-mix(in oklab, #2fc699 62%, #181614);
+  --s-accent-2: #96d56a;
 }
 
 .brio-05 {
-    --s-dark: color-mix(in oklab, #4a2bd9 74%, #181614);
-    --s-text: color-mix(in oklab, #4a2bd9 18%, #181614);
-    --s-accent: #4a2bd9;
-    --s-accent-2: #36d4b4;
+  --s-dark: color-mix(in oklab, #4a2bd9 74%, #181614);
+  --s-text: color-mix(in oklab, #4a2bd9 18%, #181614);
+  --s-accent: #4a2bd9;
+  --s-accent-2: #36d4b4;
 }
 
 .brio-06 {
-    --s-dark: color-mix(in oklab, #511259 84%, #181614);
-    --s-text: color-mix(in oklab, #3a174f 20%, #181614);
-    --s-accent: #d1541f;
-    --s-accent-2: #c73e9e;
+  --s-dark: color-mix(in oklab, #511259 84%, #181614);
+  --s-text: color-mix(in oklab, #3a174f 20%, #181614);
+  --s-accent: #d1541f;
+  --s-accent-2: #c73e9e;
 }
 
 /*
@@ -90,40 +90,40 @@
 :root,
 .fi-body,
 .fi-simple-layout {
-    --ground: color-mix(in oklab, var(--s-dark, #2b2470) 6%, var(--paper));
-    --surface: #fff;
-    --ink: var(--s-text, #221f2e);
-    --muted: color-mix(in oklab, var(--ink) 58%, transparent);
-    --faint: color-mix(in oklab, var(--ink) 40%, transparent);
-    --line: color-mix(in oklab, var(--ink) 10%, transparent);
-    --line-soft: color-mix(in oklab, var(--ink) 6%, transparent);
-    --fill: color-mix(in oklab, var(--ink) 4%, transparent);
-    --accent: var(--s-accent, #4a2bd9);
-    --accent-soft: color-mix(in oklab, var(--accent) 11%, #fff);
-    --accent-hover: color-mix(in oklab, var(--accent) 18%, #fff);
-    --shadow-card:
-        0 1px 2px color-mix(in oklab, var(--ink) 5%, transparent),
-        0 2px 10px color-mix(in oklab, var(--ink) 4%, transparent);
-    --shadow-pop:
-        0 4px 12px color-mix(in oklab, var(--ink) 8%, transparent),
-        0 12px 32px color-mix(in oklab, var(--ink) 8%, transparent);
+  --ground: color-mix(in oklab, var(--s-dark, #2b2470) 6%, var(--paper));
+  --surface: #fff;
+  --ink: var(--s-text, #221f2e);
+  --muted: color-mix(in oklab, var(--ink) 58%, transparent);
+  --faint: color-mix(in oklab, var(--ink) 40%, transparent);
+  --line: color-mix(in oklab, var(--ink) 10%, transparent);
+  --line-soft: color-mix(in oklab, var(--ink) 6%, transparent);
+  --fill: color-mix(in oklab, var(--ink) 4%, transparent);
+  --accent: var(--s-accent, #4a2bd9);
+  --accent-soft: color-mix(in oklab, var(--accent) 11%, #fff);
+  --accent-hover: color-mix(in oklab, var(--accent) 18%, #fff);
+  --shadow-card:
+    0 1px 2px color-mix(in oklab, var(--ink) 5%, transparent),
+    0 2px 10px color-mix(in oklab, var(--ink) 4%, transparent);
+  --shadow-pop:
+    0 4px 12px color-mix(in oklab, var(--ink) 8%, transparent),
+    0 12px 32px color-mix(in oklab, var(--ink) 8%, transparent);
 }
 
 /* ======================================================================
    CANVAS
    ====================================================================== */
 .fi-body {
-    background: var(--ground);
-    color: var(--ink);
+  background: var(--ground);
+  color: var(--ink);
 }
 
 .fi-main-ctn,
 .fi-main {
-    background: transparent;
+  background: transparent;
 }
 
 .fi-main {
-    padding: clamp(16px, 1.4vw, 24px) clamp(12px, 1vw, 20px) 5rem;
+  padding: clamp(16px, 1.4vw, 24px) clamp(12px, 1vw, 20px) 5rem;
 }
 
 /*
@@ -132,9 +132,9 @@
  * inputs (the search spotlight) style their own; a blanket rule drew a stray accent box
  * around those.
  */
-.fi-body :is(a, button, [role='button'], summary, [tabindex]):focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 2px;
+.fi-body :is(a, button, [role="button"], summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 /* ======================================================================
@@ -142,9 +142,9 @@
    ====================================================================== */
 .fi-sidebar,
 .fi-sidebar-nav {
-    background: var(--ground);
-    border-right: 0;
-    color: var(--ink);
+  background: var(--ground);
+  border-right: 0;
+  color: var(--ink);
 }
 
 /*
@@ -153,12 +153,12 @@
  * item defaults to `min-height: auto` and would refuse to shrink below its content.
  */
 .fi-sidebar-nav {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    overflow: hidden;
-    gap: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  gap: 0;
+  padding: 0;
 }
 
 /*
@@ -168,41 +168,41 @@
  * the topbar brand is the only one there is (see `theme.css` for the topbar half).
  */
 .fi-sidebar-header {
-    background: transparent;
-    border-bottom: 0;
-    box-shadow: none;
-    height: auto;
-    flex: 0 0 auto;
-    padding: 1.5rem 1.25rem 0.875rem;
+  background: transparent;
+  border-bottom: 0;
+  box-shadow: none;
+  height: auto;
+  flex: 0 0 auto;
+  padding: 1.5rem 1.25rem 0.875rem;
 }
 
 /* The brand mark is an <img>; the rules below also cover the text fallback. */
 .fi-sidebar-header .fi-logo {
-    width: auto;
-    max-width: 100%;
-    font-size: 1.125rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: var(--ink);
+  width: auto;
+  max-width: 100%;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
 }
 
 .fi-sidebar-nav-groups {
-    flex: 1 1 auto;
-    min-height: 0;
-    overflow-y: auto;
-    margin-inline: 0;
-    padding: 0 0.75rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  margin-inline: 0;
+  padding: 0 0.75rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .fi-sidebar-group + .fi-sidebar-group {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .fi-sidebar-group-items {
-    row-gap: 0.125rem;
+  row-gap: 0.125rem;
 }
 
 /*
@@ -212,158 +212,157 @@
  */
 .fi-sidebar-group-label,
 .fi-sidebar-group-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
-    background: transparent;
-    border: 0;
-    font-size: 0.875rem;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    text-transform: none;
-    color: var(--muted);
-    cursor: pointer;
-    transition: color 200ms var(--ease);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 200ms var(--ease);
 }
 
 .fi-sidebar-group-btn,
 .fi-sidebar-group > .fi-sidebar-group-label {
-    padding: 0.25rem 0.75rem;
+  padding: 0.25rem 0.75rem;
 }
 
 .fi-sidebar-group-btn > .fi-sidebar-group-label {
-    padding: 0;
+  padding: 0;
 }
 
 .fi-sidebar-group-btn:hover {
-    color: var(--ink);
+  color: var(--ink);
 }
 
 /* Filament sizes this at 2.25rem, which alone made the heading row 48px tall. */
 .fi-sidebar-group-btn .fi-icon-btn,
 .fi-sidebar-group-collapse-btn {
-    /* Sized here rather than by Filament, so its offset has nothing to undo. */
-    margin: 0;
-    margin-left: auto;
-    width: 1.25rem;
-    height: 1.25rem;
-    padding: 0;
-    color: var(--faint);
+  /* Sized here rather than by Filament, so its offset has nothing to undo. */
+  margin: 0;
+  margin-left: auto;
+  width: 1.25rem;
+  height: 1.25rem;
+  padding: 0;
+  color: var(--faint);
 }
 
 /* Nav item: a soft rounded row that fills with an accent tint when active. */
 .fi-sidebar-item-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    width: 100%;
-    padding: 0.5rem 0.75rem;
-    border: 0;
-    border-radius: var(--r-md);
-    background: transparent;
-    color: var(--ink);
-    transition:
-        background-color 200ms var(--ease),
-        color 200ms var(--ease);
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-radius: var(--r-md);
+  background: transparent;
+  color: var(--ink);
+  transition:
+    background-color 200ms var(--ease),
+    color 200ms var(--ease);
 }
 
 .fi-sidebar-item-label {
-    font-size: 0.875rem;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    text-transform: none;
-    color: inherit;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: inherit;
 }
 
 .fi-sidebar-item-icon,
 .fi-sidebar-item-btn svg {
-    width: 1.25rem;
-    height: 1.25rem;
-    flex: 0 0 1.25rem;
-    stroke-width: 1.5;
-    color: currentcolor;
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 1.25rem;
+  stroke-width: 1.5;
+  color: currentcolor;
 }
 
 .fi-sidebar-item:not(.fi-active) .fi-sidebar-item-btn:hover {
-    background: var(--fill);
+  background: var(--fill);
 }
 
 .fi-sidebar-item.fi-active .fi-sidebar-item-btn {
-    background: var(--accent-soft);
-    color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent);
 }
 
 .fi-sidebar-item.fi-active .fi-sidebar-item-label {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* Item counts sit at the trailing edge as quiet tabular numerals. */
 .fi-sidebar-item-badge-ctn,
 .fi-sidebar-item-badge {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 /* Kept small and tight: sidebar labels are long, and the badge eats the room they need. */
 .fi-sidebar .fi-badge {
-    background: var(--fill);
-    color: var(--muted);
-    border: 0;
-    padding: 0.125rem 0.4375rem;
-    font-size: 0.6875rem;
-    font-weight: 500;
-    letter-spacing: 0;
-    text-transform: none;
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
+  background: var(--fill);
+  color: var(--muted);
+  border: 0;
+  padding: 0.125rem 0.4375rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .fi-sidebar-item.fi-active .fi-badge {
-    background: color-mix(in oklab, var(--accent) 16%, #fff);
-    color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 16%, #fff);
+  color: var(--accent);
 }
 
-/* User row, pinned to the bottom by the flex frame above. */
+/* User row, pinned to the bottom by the flex frame above. Its surface and its inset
+   belong to the panel it shares with the utilities, further down. */
 .fi-sidebar-footer {
-    position: relative;
-    flex: 0 0 auto;
-    margin: 0;
-    display: flex;
-    background: transparent;
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
 }
 
 .fi-sidebar-footer .fi-user-menu {
-    padding: 0;
-    border-top: 0;
-    width: 100%;
+  padding: 0;
+  border-top: 0;
+  width: 100%;
 }
 
 .fi-user-menu-trigger {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    width: 100%;
-    padding: 0.25rem;
-    border-radius: var(--r-md);
-    font-size: 0.875rem;
-    color: var(--ink);
-    transition: background-color 200ms var(--ease);
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.25rem;
+  border-radius: var(--r-md);
+  font-size: 0.875rem;
+  color: var(--ink);
+  transition: background-color 200ms var(--ease);
 }
 
 .fi-user-menu-trigger:hover {
-    background: var(--fill);
+  background: var(--fill);
 }
 
 .fi-avatar {
-    background: var(--s-dark);
-    color: #fff;
-    border-radius: var(--r-pill);
-    width: 2rem;
-    height: 2rem;
-    display: grid;
-    place-items: center;
-    font-size: 0.6875rem;
-    font-weight: 600;
+  background: var(--s-dark);
+  color: #fff;
+  border-radius: var(--r-pill);
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  font-size: 0.6875rem;
+  font-weight: 600;
 }
 
 /* ======================================================================
@@ -373,49 +372,81 @@
 
 /* Environment badge, rendered next to the brand by the indicator plugin. */
 .fi-sidebar-header .environment-indicator {
-    background: var(--fill);
-    color: var(--muted);
-    border: 0;
-    border-radius: var(--r-pill);
-    padding: 0.125rem 0.5rem;
-    font-size: 0.6875rem;
-    font-weight: 500;
-    letter-spacing: 0;
-    text-transform: none;
+  background: var(--fill);
+  color: var(--muted);
+  border: 0;
+  border-radius: var(--r-pill);
+  padding: 0.125rem 0.5rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 /*
- * The utilities and the footer both read as more nav rows — same height, same radius, same
- * hover — so the foot of the sidebar continues the list rather than becoming a toolbar.
+ * The utilities and the footer are one panel resting at the foot of the sidebar.
+ *
+ * They are about the panel rather than about the content in it — where the site is, what
+ * colour the CMS is, who you are signed in as — and left on the navigation's own ground
+ * they read as three more nav items that happen to be last. Their own surface says the
+ * list above has ended.
+ *
+ * Filament renders the footer itself and offers no hook inside it, so these are two
+ * elements rather than one. Both are direct children of the sidebar, which is a flex
+ * column: `order` puts the utilities above the user row, and being siblings in the same
+ * container they are the same width — which they were not while the utilities lived in
+ * the nav, where a scrollbar took fifteen pixels off them.
  */
+.fi-brigada-utilities,
+.fi-sidebar-footer {
+  /*
+   * Enough to read as its own surface against the sidebar. A hairline carries the top
+   * edge, where the panel meets the navigation and there is no gutter to separate them.
+   */
+  background: color-mix(in oklab, var(--ink) 9%, var(--paper));
+  border: 1px solid var(--line-soft);
+  margin-inline: 0.5rem;
+}
+
 .fi-brigada-utilities {
-    position: relative;
-    flex: 0 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.125rem;
-    padding: 0.5rem 0.75rem;
+  order: 1;
+  border-bottom: 0;
+}
+
+.fi-sidebar-footer {
+  order: 2;
+  border-top: 0;
+}
+
+.fi-brigada-utilities {
+  position: relative;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
 }
 
 /*
- * The dividers are drawn inset to the gutter rather than as a border on the container,
- * which would run the full width of the sidebar — 12px past the rows on either side.
+ * The panel has its own edge now, so the rule that used to separate the utilities from
+ * the navigation above them would draw a line just inside it. What remains is the one
+ * between the utilities and the user row, inset to the panel rather than to the sidebar.
  */
-.fi-brigada-utilities::before,
 .fi-sidebar-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0.75rem;
-    right: 0.75rem;
-    height: 1px;
-    background: var(--line-soft);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  height: 1px;
+  background: var(--line-soft);
 }
 
 /* The switcher's positioning wrapper must not take the row padding as well, or the
    swatch ends up a gutter further in than every other icon in the sidebar. */
 .fi-brigada-utilities > .fi-brigada-palette {
-    padding: 0;
+  padding: 0;
 }
 
 /*
@@ -423,73 +454,79 @@
  * `filament-brigada-theme::sidebar.utilities` hook can take this class to match.
  */
 .fi-brigada-util {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    width: 100%;
-    height: auto;
-    padding: 0.5rem 0.75rem;
-    border: 0;
-    border-radius: var(--r-md);
-    background: transparent;
-    font-size: 0.875rem;
-    font-weight: 400;
-    color: var(--ink);
-    white-space: nowrap;
-    transition: background-color 200ms var(--ease);
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  border: 0;
+  border-radius: var(--r-md);
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--ink);
+  white-space: nowrap;
+  transition: background-color 200ms var(--ease);
 }
 
 .fi-brigada-util:hover {
-    background: var(--fill);
-    color: var(--ink);
-    opacity: 1;
+  background: var(--fill);
+  color: var(--ink);
+  opacity: 1;
 }
 
 /* The switcher opens upwards here — it sits at the bottom of the viewport. */
 .fi-brigada-utilities .fi-brigada-palette-panel {
-    top: auto;
-    bottom: calc(100% + 8px);
-    right: auto;
-    left: 0;
-    min-width: 13.5rem;
+  top: auto;
+  bottom: calc(100% + 8px);
+  right: auto;
+  left: 0;
+  min-width: 13.5rem;
 }
 
 /*
  * Filament renders the notifications trigger into the footer beside the user menu; both
  * get a row each so neither has to wrap in a 296px sidebar.
+ *
+ * The bottom half of the panel: Filament gives this a margin on every side, and the top
+ * one would open a gap between the two halves and break them back into two boxes.
  */
 .fi-sidebar-footer {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.125rem;
-    padding: 0.5rem 0.75rem;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.125rem;
+  padding: 0.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  border-radius: 0 0 var(--r-lg) var(--r-lg);
 }
 
 .fi-sidebar-footer .fi-icon-btn,
 .fi-topbar-database-notifications-btn {
-    margin: 0;
-    justify-content: flex-start;
-    gap: 0.625rem;
-    width: 100%;
-    height: auto;
-    padding: 0.5rem 0.75rem;
-    border-radius: var(--r-md);
-    font-size: 0.875rem;
-    color: var(--ink);
+  margin: 0;
+  justify-content: flex-start;
+  gap: 0.625rem;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--r-md);
+  font-size: 0.875rem;
+  color: var(--ink);
 }
 
 .fi-user-menu-trigger {
-    padding: 0.5rem 0.75rem;
-    min-width: 0;
+  padding: 0.5rem 0.75rem;
+  min-width: 0;
 }
 
 /* Long administrator names must not stack the row four lines high. */
 .fi-user-menu-trigger > span,
 .fi-user-menu-trigger .fi-user-menu-trigger-label {
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /*
@@ -500,17 +537,16 @@
  * so the heading and breadcrumbs are indented past it rather than pushed below it.
  */
 .fi-layout-sidebar-toggle-btn-ctn {
-    position: absolute;
-    z-index: 20;
+  position: absolute;
+  z-index: 20;
 }
 
 .fi-layout-sidebar-toggle-btn {
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: var(--r-md);
-    box-shadow: var(--shadow-card);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow: var(--shadow-card);
 }
-
 
 /* ======================================================================
    FILAMENT LAYOUT ADJUSTMENTS THIS THEME DEPENDS ON
@@ -525,12 +561,12 @@
  * own margin is the single gap this design wants.
  */
 .fi-page-header-main-ctn {
-    row-gap: 0;
-    padding-block: 0;
+  row-gap: 0;
+  padding-block: 0;
 }
 
 .fi-page-content {
-    row-gap: 0;
+  row-gap: 0;
 }
 
 /*
@@ -539,56 +575,56 @@
  * floating in it. Tighten it onto its content so it reads as part of the toolbar.
  */
 .fi-ta-filters-above-content-ctn {
-    padding: 0.5rem 1.25rem 0;
-    border-bottom: 0;
+  padding: 0.5rem 1.25rem 0;
+  border-bottom: 0;
 }
 
 /* ======================================================================
    PAGE HEADER
    ====================================================================== */
 .fi-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    border: 0;
-    padding: 0;
-    margin-bottom: clamp(16px, 1.6vw, 24px);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  border: 0;
+  padding: 0;
+  margin-bottom: clamp(16px, 1.6vw, 24px);
 }
 
 .fi-header-heading {
-    font-size: clamp(1.625rem, 2vw, 2rem);
-    line-height: 1.1;
-    letter-spacing: -0.03em;
-    font-weight: 600;
-    color: var(--ink);
-    text-transform: none;
+  font-size: clamp(1.625rem, 2vw, 2rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  color: var(--ink);
+  text-transform: none;
 }
 
 .fi-header-subheading {
-    font-size: 0.9375rem;
-    line-height: 1.6;
-    color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--muted);
 }
 
 .fi-breadcrumbs {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 0.375rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.375rem;
 }
 
 .fi-breadcrumbs-item-label,
 .fi-breadcrumbs a {
-    font-size: 0.875rem;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    text-transform: none;
-    color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--muted);
 }
 
 .fi-breadcrumbs a:hover {
-    color: var(--ink);
+  color: var(--ink);
 }
 
 /*
@@ -604,7 +640,7 @@
  * heading, or the breadcrumbs and title fall out of line with the table beneath them.
  */
 .fi-layout:has(.fi-sidebar:not(.fi-sidebar-open)) .fi-main {
-    padding-inline-start: calc(clamp(12px, 1vw, 20px) + 2.75rem);
+  padding-inline-start: calc(clamp(12px, 1vw, 20px) + 2.75rem);
 }
 
 /* ======================================================================
@@ -613,255 +649,255 @@
 .fi-ta-ctn,
 .fi-section,
 .fi-wi-stats-overview-stat {
-    background: var(--surface);
-    border: 1px solid var(--line-soft);
-    border-radius: var(--r-lg);
-    box-shadow: var(--shadow-card);
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-card);
 }
 
 .fi-section-header {
-    padding: clamp(14px, 1.2vw, 20px) clamp(16px, 1.4vw, 22px);
-    border-bottom: 1px solid var(--line-soft);
-    background: transparent;
+  padding: clamp(14px, 1.2vw, 20px) clamp(16px, 1.4vw, 22px);
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
 }
 
 .fi-section-header-heading {
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    text-transform: none;
-    color: var(--ink);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: none;
+  color: var(--ink);
 }
 
 .fi-section-header-description {
-    font-size: 0.875rem;
-    color: var(--muted);
+  font-size: 0.875rem;
+  color: var(--muted);
 }
 
 .fi-section-content {
-    padding: clamp(16px, 1.6vw, 24px);
+  padding: clamp(16px, 1.6vw, 24px);
 }
 
 /* Stat tiles. */
 .fi-wi-stats-overview-stat-label {
-    font-size: 0.875rem;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-    text-transform: none;
-    color: var(--muted);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--muted);
 }
 
 .fi-wi-stats-overview-stat-value {
-    font-size: clamp(1.75rem, 2.2vw, 2.25rem);
-    line-height: 1.1;
-    letter-spacing: -0.03em;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    color: var(--ink);
+  font-size: clamp(1.75rem, 2.2vw, 2.25rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
 }
 
 .fi-wi-stats-overview-stat-description {
-    font-size: 0.8125rem;
-    color: var(--muted);
+  font-size: 0.8125rem;
+  color: var(--muted);
 }
 
 /* ======================================================================
    TABLE
    ====================================================================== */
 .fi-ta-header-toolbar {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    padding: 0.875rem clamp(14px, 1.2vw, 20px);
-    border-bottom: 1px solid var(--line-soft);
-    background: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  padding: 0.875rem clamp(14px, 1.2vw, 20px);
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
 }
 
 .fi-ta-table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .fi-ta-header-cell {
-    padding: 0.75rem clamp(10px, 0.8vw, 16px);
-    text-align: left;
-    background: transparent;
-    border-bottom: 1px solid var(--line);
-    white-space: nowrap;
-    font-size: 0.875rem;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    text-transform: none;
-    color: var(--muted);
+  padding: 0.75rem clamp(10px, 0.8vw, 16px);
+  text-align: left;
+  background: transparent;
+  border-bottom: 1px solid var(--line);
+  white-space: nowrap;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--muted);
 }
 
 .fi-ta-row {
-    border-bottom: 1px solid var(--line-soft);
-    background: transparent;
-    transition: background-color 160ms var(--ease);
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
+  transition: background-color 160ms var(--ease);
 }
 
 .fi-ta-row:last-child {
-    border-bottom: 0;
+  border-bottom: 0;
 }
 
 .fi-ta-row:hover {
-    background: var(--fill);
+  background: var(--fill);
 }
 
 .fi-ta-cell {
-    padding: 0.75rem clamp(10px, 0.8vw, 16px);
-    font-size: 0.9375rem;
-    color: var(--ink);
-    vertical-align: middle;
+  padding: 0.75rem clamp(10px, 0.8vw, 16px);
+  font-size: 0.9375rem;
+  color: var(--ink);
+  vertical-align: middle;
 }
 
 /* Filament carries its own padding on the column content; ours is on the cell. */
 .fi-ta-cell .fi-ta-col > * {
-    padding-block: 0;
+  padding-block: 0;
 }
 
 .fi-ta-cell.fi-align-end,
 .fi-ta-header-cell.fi-align-end {
-    text-align: right;
+  text-align: right;
 }
 
 .fi-ta-cell.fi-align-end {
-    font-variant-numeric: tabular-nums;
+  font-variant-numeric: tabular-nums;
 }
 
 .fi-ta-empty-state-heading {
-    font-size: 1rem;
-    font-weight: 600;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .fi-pagination,
 .fi-ta-pagination {
-    padding: 0.75rem clamp(14px, 1.2vw, 20px);
-    border-top: 1px solid var(--line-soft);
-    font-size: 0.875rem;
-    color: var(--muted);
+  padding: 0.75rem clamp(14px, 1.2vw, 20px);
+  border-top: 1px solid var(--line-soft);
+  font-size: 0.875rem;
+  color: var(--muted);
 }
 
 .fi-pagination-item {
-    border-radius: var(--r-sm);
-    color: var(--ink);
+  border-radius: var(--r-sm);
+  color: var(--ink);
 }
 
-.fi-pagination-item[aria-current='page'] {
-    background: var(--accent);
-    color: #fff;
+.fi-pagination-item[aria-current="page"] {
+  background: var(--accent);
+  color: #fff;
 }
 
 /* ======================================================================
    TABS — a pill row inside a soft track
    ====================================================================== */
 .fi-tabs {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    flex-wrap: wrap;
-    padding: 0.3125rem;
-    margin-bottom: 0;
-    border: 0;
-    border-radius: var(--r-lg);
-    background: var(--fill);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+  padding: 0.3125rem;
+  margin-bottom: 0;
+  border: 0;
+  border-radius: var(--r-lg);
+  background: var(--fill);
 }
 
 .fi-tabs-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.4375rem 0.875rem;
-    border: 0;
-    border-radius: var(--r-pill);
-    background: transparent;
-    color: var(--muted);
-    cursor: pointer;
-    transition:
-        background-color 200ms var(--ease),
-        color 200ms var(--ease);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4375rem 0.875rem;
+  border: 0;
+  border-radius: var(--r-pill);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition:
+    background-color 200ms var(--ease),
+    color 200ms var(--ease);
 }
 
 .fi-tabs-item:hover {
-    color: var(--ink);
+  color: var(--ink);
 }
 
 .fi-tabs-item.fi-active,
-.fi-tabs-item[aria-selected='true'] {
-    background: var(--surface);
-    color: var(--ink);
-    box-shadow: var(--shadow-card);
+.fi-tabs-item[aria-selected="true"] {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-card);
 }
 
 .fi-tabs-item-label {
-    font-size: 0.875rem;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    text-transform: none;
-    color: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: inherit;
 }
 
 .fi-tabs-item-badge {
-    background: var(--fill);
-    color: var(--muted);
-    font-size: 0.75rem;
-    font-variant-numeric: tabular-nums;
+  background: var(--fill);
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
 }
 
 /* ======================================================================
    BUTTONS + LINKS
    ====================================================================== */
 .fi-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5625rem 1.125rem;
-    border-radius: var(--r-pill);
-    border: 1px solid transparent;
-    background: transparent;
-    cursor: pointer;
-    font-size: 0.875rem;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    text-transform: none;
-    box-shadow: none;
-    transition:
-        background-color 200ms var(--ease),
-        opacity 200ms var(--ease);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5625rem 1.125rem;
+  border-radius: var(--r-pill);
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  box-shadow: none;
+  transition:
+    background-color 200ms var(--ease),
+    opacity 200ms var(--ease);
 }
 
 .fi-btn.fi-color-primary {
-    background: var(--s-dark);
-    color: #fff;
+  background: var(--s-dark);
+  color: #fff;
 }
 
 .fi-btn.fi-color-primary:hover {
-    background: color-mix(in oklab, var(--s-dark) 88%, #fff);
+  background: color-mix(in oklab, var(--s-dark) 88%, #fff);
 }
 
 .fi-btn.fi-outlined,
 .fi-btn.fi-color-gray {
-    background: var(--surface);
-    border-color: var(--line);
-    color: var(--ink);
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--ink);
 }
 
 .fi-btn.fi-color-gray:hover {
-    background: var(--fill);
+  background: var(--fill);
 }
 
 .fi-btn.fi-color-danger {
-    background: var(--hue-danger);
-    color: #fff;
+  background: var(--hue-danger);
+  color: #fff;
 }
 
 .fi-btn svg {
-    width: 1.125rem;
-    height: 1.125rem;
-    stroke-width: 1.5;
+  width: 1.125rem;
+  height: 1.125rem;
+  stroke-width: 1.5;
 }
 
 /*
@@ -872,156 +908,156 @@
  * label six pixels below the label it belongs to.
  */
 .fi-icon-btn {
-    border-radius: var(--r-md);
-    color: var(--muted);
-    transition:
-        background-color 200ms var(--ease),
-        color 200ms var(--ease);
+  border-radius: var(--r-md);
+  color: var(--muted);
+  transition:
+    background-color 200ms var(--ease),
+    color 200ms var(--ease);
 }
 
 .fi-icon-btn:hover {
-    background: var(--fill);
-    color: var(--ink);
+  background: var(--fill);
+  color: var(--ink);
 }
 
 .fi-icon-btn .fi-icon,
 .fi-icon-btn svg {
-    width: 1.125rem;
-    height: 1.125rem;
-    stroke-width: 1.5;
+  width: 1.125rem;
+  height: 1.125rem;
+  stroke-width: 1.5;
 }
 
 .fi-link {
-    color: var(--accent);
-    font-weight: 500;
+  color: var(--accent);
+  font-weight: 500;
 }
 
 /* ======================================================================
    FORMS — soft filled fields, accent ring on focus
    ====================================================================== */
 .fi-fo-field {
-    row-gap: 0.375rem;
+  row-gap: 0.375rem;
 }
 
 .fi-fo-field-label,
 .fi-fo-field-label-content {
-    font-size: 0.875rem;
-    font-weight: 500;
-    letter-spacing: -0.01em;
-    text-transform: none;
-    color: var(--ink);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--ink);
 }
 
 .fi-input-wrp {
-    display: flex;
-    align-items: center;
-    background: var(--surface);
-    border: 1px solid var(--line);
-    border-radius: var(--r-md);
-    box-shadow: none;
-    transition:
-        border-color 200ms var(--ease),
-        box-shadow 200ms var(--ease);
+  display: flex;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  box-shadow: none;
+  transition:
+    border-color 200ms var(--ease),
+    box-shadow 200ms var(--ease);
 }
 
 .fi-input-wrp:focus-within {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 14%, transparent);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 14%, transparent);
 }
 
 .fi-input-wrp.fi-invalid {
-    border-color: var(--hue-danger);
+  border-color: var(--hue-danger);
 }
 
 .fi-input,
 .fi-select-input,
 .fi-fo-textarea textarea {
-    width: 100%;
-    background: transparent;
-    border: 0;
-    padding: 0.5rem 0.75rem;
-    font: inherit;
-    font-size: 0.9375rem;
-    color: var(--ink);
-    outline: 0;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+  font-size: 0.9375rem;
+  color: var(--ink);
+  outline: 0;
 }
 
 .fi-input::placeholder {
-    color: var(--faint);
+  color: var(--faint);
 }
 
 .fi-input-wrp-prefix,
 .fi-input-wrp-suffix {
-    color: var(--muted);
-    display: grid;
-    place-items: center;
-    padding-inline: 0.625rem;
+  color: var(--muted);
+  display: grid;
+  place-items: center;
+  padding-inline: 0.625rem;
 }
 
 .fi-input-wrp svg {
-    width: 1.125rem;
-    height: 1.125rem;
-    stroke-width: 1.5;
+  width: 1.125rem;
+  height: 1.125rem;
+  stroke-width: 1.5;
 }
 
-.fi-toggle[aria-checked='true'] {
-    background-color: var(--accent);
-    border-color: var(--accent);
+.fi-toggle[aria-checked="true"] {
+  background-color: var(--accent);
+  border-color: var(--accent);
 }
 
 .fi-fo-repeater-item,
 .fi-fo-builder-block {
-    border: 1px solid var(--line-soft);
-    border-radius: var(--r-md);
-    background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-md);
+  background: var(--surface);
 }
 
 /* ======================================================================
    BADGES — status keeps its meaning across every palette
    ====================================================================== */
 .fi-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.375rem;
-    padding: 0.1875rem 0.5625rem;
-    border-radius: var(--r-pill);
-    border: 0;
-    background: var(--fill);
-    color: var(--ink);
-    font-size: 0.8125rem;
-    font-weight: 500;
-    letter-spacing: -0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.1875rem 0.5625rem;
+  border-radius: var(--r-pill);
+  border: 0;
+  background: var(--fill);
+  color: var(--ink);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
 .fi-badge svg {
-    width: 0.875rem;
-    height: 0.875rem;
-    stroke-width: 1.75;
+  width: 0.875rem;
+  height: 0.875rem;
+  stroke-width: 1.75;
 }
 
 .fi-badge.fi-color-success,
 .fi-badge.fi-color-green {
-    background: color-mix(in oklab, var(--hue-success) 20%, #fff);
-    color: color-mix(in oklab, var(--hue-success) 55%, #181614);
+  background: color-mix(in oklab, var(--hue-success) 20%, #fff);
+  color: color-mix(in oklab, var(--hue-success) 55%, #181614);
 }
 
 .fi-badge.fi-color-info,
 .fi-badge.fi-color-blue {
-    background: color-mix(in oklab, var(--hue-info) 16%, #fff);
-    color: color-mix(in oklab, var(--hue-info) 62%, #181614);
+  background: color-mix(in oklab, var(--hue-info) 16%, #fff);
+  color: color-mix(in oklab, var(--hue-info) 62%, #181614);
 }
 
 .fi-badge.fi-color-warning,
 .fi-badge.fi-color-yellow,
 .fi-badge.fi-color-amber {
-    background: color-mix(in oklab, var(--hue-warning) 24%, #fff);
-    color: color-mix(in oklab, var(--hue-warning) 62%, #181614);
+  background: color-mix(in oklab, var(--hue-warning) 24%, #fff);
+  color: color-mix(in oklab, var(--hue-warning) 62%, #181614);
 }
 
 .fi-badge.fi-color-danger,
 .fi-badge.fi-color-red {
-    background: color-mix(in oklab, var(--hue-danger) 14%, #fff);
-    color: var(--hue-danger);
+  background: color-mix(in oklab, var(--hue-danger) 14%, #fff);
+  color: var(--hue-danger);
 }
 
 /* ======================================================================
@@ -1030,33 +1066,33 @@
 .fi-modal-window,
 .fi-dropdown-panel,
 .fi-no-notification {
-    background: var(--surface);
-    border: 1px solid var(--line-soft);
-    border-radius: var(--r-lg);
-    box-shadow: var(--shadow-pop);
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-pop);
 }
 
 .fi-modal-heading {
-    font-size: 1.125rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .fi-modal-description,
 .fi-no-notification-body {
-    font-size: 0.9375rem;
-    line-height: 1.6;
-    color: var(--muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--muted);
 }
 
 .fi-dropdown-list-item {
-    border-radius: var(--r-sm);
-    font-size: 0.9375rem;
-    color: var(--ink);
+  border-radius: var(--r-sm);
+  font-size: 0.9375rem;
+  color: var(--ink);
 }
 
 .fi-dropdown-list-item:hover {
-    background: var(--fill);
+  background: var(--fill);
 }
 
 /* ======================================================================
@@ -1065,95 +1101,95 @@
 .fi-sidebar-nav-groups,
 .fi-main-ctn,
 .fi-ta-ctn {
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-    transition: scrollbar-color 250ms var(--ease);
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  transition: scrollbar-color 250ms var(--ease);
 }
 
 .fi-sidebar-nav-groups:hover,
 .fi-main-ctn:hover,
 .fi-ta-ctn:hover {
-    scrollbar-color: color-mix(in oklab, var(--ink) 20%, transparent) transparent;
+  scrollbar-color: color-mix(in oklab, var(--ink) 20%, transparent) transparent;
 }
 
 /* ======================================================================
    PALETTE SWITCHER — markup in `filament-brigada-theme::palette-switcher`
    ====================================================================== */
 [x-cloak] {
-    display: none !important;
+  display: none !important;
 }
 
 .fi-brigada-palette {
-    position: relative;
+  position: relative;
 }
 
 .fi-brigada-palette-swatch {
-    width: 16px;
-    height: 16px;
-    flex: 0 0 16px;
-    border-radius: var(--r-pill);
-    background: var(--s-dark);
-    display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  border-radius: var(--r-pill);
+  background: var(--s-dark);
+  display: inline-block;
 }
 
 .fi-brigada-palette-trigger {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.375rem 0.75rem;
-    border-radius: var(--r-pill);
-    border: 1px solid var(--line);
-    background: var(--surface);
-    cursor: pointer;
-    font-size: 0.875rem;
-    font-weight: 500;
-    color: var(--ink);
-    transition: background-color 200ms var(--ease);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--ink);
+  transition: background-color 200ms var(--ease);
 }
 
 .fi-brigada-palette-trigger:hover {
-    background: var(--fill);
+  background: var(--fill);
 }
 
 .fi-brigada-palette-panel {
-    position: absolute;
-    right: 0;
-    top: calc(100% + 8px);
-    z-index: 30;
-    min-width: 15rem;
-    padding: 0.375rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.125rem;
-    background: var(--surface);
-    border: 1px solid var(--line-soft);
-    border-radius: var(--r-lg);
-    box-shadow: var(--shadow-pop);
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 30;
+  min-width: 15rem;
+  padding: 0.375rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  background: var(--surface);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-pop);
 }
 
 .fi-brigada-palette-option {
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-    padding: 0.5rem 0.625rem;
-    border: 0;
-    border-radius: var(--r-sm);
-    background: transparent;
-    cursor: pointer;
-    font-size: 0.875rem;
-    color: var(--ink);
-    text-align: left;
-    transition: background-color 200ms var(--ease);
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 0.625rem;
+  border: 0;
+  border-radius: var(--r-sm);
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: var(--ink);
+  text-align: left;
+  transition: background-color 200ms var(--ease);
 }
 
 .fi-brigada-palette-option:hover {
-    background: var(--fill);
+  background: var(--fill);
 }
 
-.fi-brigada-palette-option[aria-current='true'] {
-    background: var(--accent-soft);
-    color: var(--accent);
-    font-weight: 500;
+.fi-brigada-palette-option[aria-current="true"] {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 500;
 }
 
 /* ======================================================================
@@ -1173,128 +1209,128 @@
  */
 html:has(.fi-simple-layout),
 body:has(.fi-simple-layout) {
-    height: 100%;
+  height: 100%;
 }
 
 body:has(.fi-simple-layout) .fi-simple-layout {
-    min-height: 100%;
+  min-height: 100%;
 }
 
 .fi-simple-layout {
-    position: relative;
-    background: var(--s-dark);
-    isolation: isolate;
-    /*
+  position: relative;
+  background: var(--s-dark);
+  isolation: isolate;
+  /*
      * The drifting colour field below is inset -20% so its blurred edges never enter the
      * frame as it moves. That bleed counts towards the document's scrollable area, which
      * put both scrollbars on the login screen — clip it here. Content is unaffected: this
      * element grows with it, so only the decoration is ever outside the box.
      */
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .fi-simple-layout::before {
-    content: '';
-    position: absolute;
-    inset: -20%;
-    z-index: -2;
-    background:
-        radial-gradient(
-            42% 46% at 22% 24%,
-            color-mix(in oklab, var(--s-accent) 72%, var(--s-dark)) 0,
-            transparent 62%
-        ),
-        radial-gradient(
-            48% 52% at 78% 18%,
-            color-mix(in oklab, var(--s-accent-2) 62%, var(--s-dark)) 0,
-            transparent 60%
-        ),
-        radial-gradient(
-            52% 56% at 64% 84%,
-            color-mix(in oklab, var(--s-accent) 60%, var(--s-dark)) 0,
-            transparent 64%
-        ),
-        radial-gradient(
-            36% 40% at 10% 80%,
-            color-mix(in oklab, var(--s-accent-2) 70%, var(--s-dark)) 0,
-            transparent 62%
-        );
-    filter: blur(28px) saturate(115%);
-    animation: brio-drift 48s ease-in-out infinite alternate;
+  content: "";
+  position: absolute;
+  inset: -20%;
+  z-index: -2;
+  background:
+    radial-gradient(
+      42% 46% at 22% 24%,
+      color-mix(in oklab, var(--s-accent) 72%, var(--s-dark)) 0,
+      transparent 62%
+    ),
+    radial-gradient(
+      48% 52% at 78% 18%,
+      color-mix(in oklab, var(--s-accent-2) 62%, var(--s-dark)) 0,
+      transparent 60%
+    ),
+    radial-gradient(
+      52% 56% at 64% 84%,
+      color-mix(in oklab, var(--s-accent) 60%, var(--s-dark)) 0,
+      transparent 64%
+    ),
+    radial-gradient(
+      36% 40% at 10% 80%,
+      color-mix(in oklab, var(--s-accent-2) 70%, var(--s-dark)) 0,
+      transparent 62%
+    );
+  filter: blur(28px) saturate(115%);
+  animation: brio-drift 48s ease-in-out infinite alternate;
 }
 
 .fi-simple-layout::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    opacity: 0.16;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.5'/></svg>");
-    animation: brio-grain 6s steps(4) infinite;
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.16;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/></filter><rect width='140' height='140' filter='url(%23n)' opacity='0.5'/></svg>");
+  animation: brio-grain 6s steps(4) infinite;
 }
 
 @keyframes brio-drift {
-    0% {
-        transform: translate3d(-2%, -1%, 0) scale(1.04);
-    }
+  0% {
+    transform: translate3d(-2%, -1%, 0) scale(1.04);
+  }
 
-    50% {
-        transform: translate3d(2%, 2%, 0) scale(1.1);
-    }
+  50% {
+    transform: translate3d(2%, 2%, 0) scale(1.1);
+  }
 
-    100% {
-        transform: translate3d(-1%, 1%, 0) scale(1.06);
-    }
+  100% {
+    transform: translate3d(-1%, 1%, 0) scale(1.06);
+  }
 }
 
 @keyframes brio-grain {
-    0%,
-    100% {
-        transform: translate(0, 0);
-    }
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
 
-    25% {
-        transform: translate(-2%, 1%);
-    }
+  25% {
+    transform: translate(-2%, 1%);
+  }
 
-    50% {
-        transform: translate(1%, -2%);
-    }
+  50% {
+    transform: translate(1%, -2%);
+  }
 
-    75% {
-        transform: translate(2%, 2%);
-    }
+  75% {
+    transform: translate(2%, 2%);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .fi-simple-layout::before,
-    .fi-simple-layout::after {
-        animation: none;
-    }
+  .fi-simple-layout::before,
+  .fi-simple-layout::after {
+    animation: none;
+  }
 }
 
 /* The login card sits on that ground as solid paper. */
 .fi-simple-main {
-    background: var(--surface);
-    border-radius: var(--r-lg);
-    border: 0;
-    box-shadow: var(--shadow-pop);
+  background: var(--surface);
+  border-radius: var(--r-lg);
+  border: 0;
+  box-shadow: var(--shadow-pop);
 }
 
 .fi-simple-header .fi-logo {
-    margin-inline: auto;
-    margin-bottom: 0.5rem;
+  margin-inline: auto;
+  margin-bottom: 0.5rem;
 }
 
 .fi-simple-header-heading {
-    font-size: 1.375rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: var(--ink);
+  font-size: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
 }
 
 /* Brand and any other chrome outside the card reads on the dark ground. */
 .fi-simple-layout > *:not(.fi-simple-main) {
-    color: #fff;
+  color: #fff;
 }
