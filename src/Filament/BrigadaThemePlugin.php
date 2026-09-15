@@ -17,13 +17,13 @@ use Wotz\FilamentBrigadaTheme\Enums\Palette;
  */
 class BrigadaThemePlugin implements Plugin
 {
-    protected Palette | Closure | null $defaultPalette = null;
+    protected Palette|Closure|null $defaultPalette = null;
 
-    protected string | Closure | null $sidebarWidth = null;
+    protected string|Closure|null $sidebarWidth = null;
 
-    protected bool | Closure $hasLayout = true;
+    protected bool|Closure $hasLayout = true;
 
-    protected bool | Closure $hasPaletteSwitcher = true;
+    protected bool|Closure $hasPaletteSwitcher = true;
 
     public static function make(): static
     {
@@ -50,8 +50,15 @@ class BrigadaThemePlugin implements Plugin
         );
 
         if ($this->hasPaletteSwitcher()) {
+            /*
+             * The sidebar's footer, not the end of its navigation. The nav is the
+             * scrolling half of the sidebar, so rendered there these rows scroll away
+             * with it and sit fifteen pixels narrower than the user row beneath them,
+             * where the scrollbar is. In the footer they share a container with it, and
+             * the two can be one panel.
+             */
             $panel->renderHook(
-                PanelsRenderHook::SIDEBAR_NAV_END,
+                PanelsRenderHook::SIDEBAR_FOOTER,
                 fn (): string => view('filament-brigada-theme::palette-switcher', [
                     'palettes' => Palette::cases(),
                     'default' => $this->getDefaultPalette()->value,
@@ -94,7 +101,7 @@ class BrigadaThemePlugin implements Plugin
 
     public function boot(Panel $panel): void {}
 
-    public function defaultPalette(Palette | Closure | null $palette): static
+    public function defaultPalette(Palette|Closure|null $palette): static
     {
         $this->defaultPalette = $palette;
 
@@ -112,7 +119,7 @@ class BrigadaThemePlugin implements Plugin
             ?? Palette::BlueGreen;
     }
 
-    public function sidebarWidth(string | Closure | null $width): static
+    public function sidebarWidth(string|Closure|null $width): static
     {
         $this->sidebarWidth = $width;
 
@@ -132,7 +139,7 @@ class BrigadaThemePlugin implements Plugin
      * Turn off for a panel that keeps its own topbar and sidebar arrangement. The
      * stylesheet still applies, but it assumes this layout, so expect to redo parts of it.
      */
-    public function layout(bool | Closure $condition = true): static
+    public function layout(bool|Closure $condition = true): static
     {
         $this->hasLayout = $condition;
 
@@ -146,7 +153,7 @@ class BrigadaThemePlugin implements Plugin
             : $this->hasLayout);
     }
 
-    public function paletteSwitcher(bool | Closure $condition = true): static
+    public function paletteSwitcher(bool|Closure $condition = true): static
     {
         $this->hasPaletteSwitcher = $condition;
 
